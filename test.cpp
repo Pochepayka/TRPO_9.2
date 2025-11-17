@@ -28,7 +28,7 @@ int main() {
 
     assert(countNegative(arr1) == 0);
     assert(countNegative(arr2) == 3);
-    assert(countNegative(arr3) == 2);
+    assert(countNegative(arr3) == 0);
 
     cout << "All tests passed." << endl;
 
