@@ -4,3 +4,8 @@ add_executable(TRPO_2
     main.cpp
     functions.cpp
 )
+
+add_executable(test
+    functions.cpp
+    test.cpp
+)
