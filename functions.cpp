@@ -24,6 +24,19 @@ int minElement(const int arr[]) {
     return minVal;
 }
 
+int maxElement(const int arr[]) {
+    int i = 0;
+    int maxVal = arr[0];
+
+    while (arr[i] != 0) {
+        if (arr[i] > maxVal) {
+            maxVal = arr[i];
+        }
+        i++;
+    }
+    return maxVal;
+}
+
 int countLength(const int arr[]) {
     int length = 0;
 

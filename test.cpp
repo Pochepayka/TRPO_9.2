@@ -18,6 +18,10 @@ int main() {
     assert(minElement(arr2) == -9);
     assert(minElement(arr3) == 10);
 
+    assert(maxElement(arr1) == 4);
+    assert(maxElement(arr2) == -1);
+    assert(maxElement(arr3) == 50);
+
     assert(countLength(arr1) == 4);
     assert(countLength(arr2) == 3);
     assert(countLength(arr3) == 5);

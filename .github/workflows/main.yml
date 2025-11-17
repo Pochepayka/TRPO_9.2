@@ -2,7 +2,10 @@ name: TRPO_2_CI/CD
 
 on:
   workflow_dispatch:
-  push:  # Автоматический запуск после коммита
+  push:             # Автоматический запуск после коммита
+  pull_request:     # Запуск при создании или обновлении PR
+    branches:
+      - main
 
 jobs:
   build:
