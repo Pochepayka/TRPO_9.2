@@ -42,6 +42,6 @@ jobs:
       - name: Коммит изменений документации
         if: github.event_name == 'push'
         run: |
-          git add docs/
+          git add html/
           git commit -m "Автоматичесткое обновление документации"
           git push 
