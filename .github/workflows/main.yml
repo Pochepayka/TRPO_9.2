@@ -33,10 +33,10 @@ jobs:
       - name: Генерация документации
         run: doxygen Doxyfile
 
-      - name: Индентиыикация
+      - name: Индентификация
         if: github.event_name == 'push'
         run: |
-          git config --global user.email "vovapo2004@gmail.com""
+          git config --global user.email "vovapo2004@gmail.com"
           git config --global user.name "Pochepayka"
           
       - name: Коммит изменений документации
