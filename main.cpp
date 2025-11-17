@@ -14,6 +14,7 @@ int main() {
     cout << "Сумма массива: " << sumArray(arr) << endl;
     cout << "Минимальный элемент массива: " << minElement(arr) << endl;
     cout << "Максимальный элемент массива: " << maxElement(arr) << endl;
+    cout << "Количество отрицательных элементов: " << countNegative(arr) << endl;
 
     return 0;
 }

@@ -45,3 +45,16 @@ int countLength(const int arr[]) {
     }
     return length;
 }
+
+int countNegative(const int arr[]) {
+    int count = 0;
+    int i = 0;
+
+    while (arr[i] != 0) {
+        if (arr[i] < 0) {
+            count++;
+        }
+        i++;
+    }
+    return count;
+}
