@@ -1,3 +1,8 @@
+/**
+ * @file test.cpp
+ * @brief Набор тестов для проверки корректности функций с помощью assert.
+ */
+
 #include <cassert>
 #include <iostream>
 #include "functions.h"

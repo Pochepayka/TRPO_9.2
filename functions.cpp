@@ -1,3 +1,8 @@
+/**
+ * @file functions.cpp
+ * @brief Реализация функций для работы с массивами.
+ */
+
 #include "functions.h"
 
 int sumArray(const int arr[]) {

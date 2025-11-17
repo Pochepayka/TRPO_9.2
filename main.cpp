@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ * @brief Р”РµРјРѕРЅСЃС‚СЂР°С†РёСЏ СЂР°Р±РѕС‚С‹ С„СѓРЅРєС†РёР№ РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё РјР°СЃСЃРёРІРѕРІ.
+ */
+
 #include <iostream>
 #include "functions.h"
 #include "locale.h"
@@ -8,13 +13,13 @@ int main() {
 
     setlocale(LC_ALL, "Russian");
 
-    int arr[] = {3, -2, 7, 5, -1, 4, 0}; // 0 - конец массива
+    int arr[] = {3, -2, 7, 5, -1, 4, 0}; // 0 - РєРѕРЅРµС† РјР°СЃСЃРёРІР°
 
-    cout << "Длина массива: " << countLength(arr) << endl;
-    cout << "Сумма массива: " << sumArray(arr) << endl;
-    cout << "Минимальный элемент массива: " << minElement(arr) << endl;
-    cout << "Максимальный элемент массива: " << maxElement(arr) << endl;
-    cout << "Количество отрицательных элементов: " << countNegative(arr) << endl;
+    cout << "Р”Р»РёРЅР° РјР°СЃСЃРёРІР°: " << countLength(arr) << endl;
+    cout << "РЎСѓРјРјР° РјР°СЃСЃРёРІР°: " << sumArray(arr) << endl;
+    cout << "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << minElement(arr) << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " << maxElement(arr) << endl;
+    cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: " << countNegative(arr) << endl;
 
     return 0;
 }
