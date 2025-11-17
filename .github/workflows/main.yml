@@ -7,6 +7,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Установка необходимых зависимостей
-        run: sudo apt update && sudo apt install -y cmake g++
+        run: sudo apt update && sudo apt install -y cmake g++ doxygen
 
       - name: Создание файлов сборки
         run: cmake .
@@ -26,3 +29,19 @@ jobs:
 
       - name: Тестирование
         run: ./test
+
+      - name: Генерация документации
+        run: doxygen Doxyfile
+
+      - name: Индентиыикация
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.email "vovapo2004@gmail.com""
+          git config --global user.name "Pochepayka"
+          
+      - name: Коммит изменений документации
+        if: github.event_name == 'push'
+        run: |
+          git add docs/
+          git commit -m "Автоматичесткое обновление документации"
+          git push 
